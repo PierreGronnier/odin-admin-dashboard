@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #2196F3; 
+    color: white;
+    padding: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    display: grid;
+    gap: 20px;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.icon {
+    width: 35px; 
+    height: 35px; 
+    filter: brightness(0) invert(1); 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: white; 
+    display: flex; 
+    align-items: center;
+    gap: 25px;
+    font-size: 1.7rem; 
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px; 
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    transform: scale(1.05); 
+}
+
+.menu .menu-title {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.menu-title .icon {
+    width: 60px; 
+    height: 60px;
+}
+
+.menu li:nth-child(8) { 
+    margin-top: 20%; 
+}
+
