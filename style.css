@@ -19,7 +19,7 @@ body {
     grid-template-rows: auto 1fr;
     grid-template-areas: 
         "sidebar navbar"
-        "sidebar main";
+        "sidebar header";
     height: 100vh;
 }
 
@@ -143,8 +143,8 @@ body {
     font-size: 1.5em;
 }
 
-.main {
-    grid-area: main;
+.header {
+    grid-area: header;
 }
 
 .user-info {
