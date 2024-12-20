@@ -223,12 +223,13 @@ h2, h3{
 }
 
 .section-project{
+    margin-left: 70px;
     grid-area: project;
 }
 
 .project {
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 450px));
+    grid-template-columns: repeat(2, minmax(250px, 400px));
     gap: 35px;
 }
 
