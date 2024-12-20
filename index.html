@@ -1,78 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Odin | Admin Dashboard</title>
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
             <ul class="menu">
                 <li class="menu-title">
-                    <img src="media/icons/view-dashboard.svg" alt="Dashboard Icon" class="icon"><h1>Dashboard</h1>
+                    <img src="media/icons/view-dashboard.svg" alt="Dashboard Icon" class="icon">
+                    <h1>Dashboard</h1>
                 </li>
-                <li>
-                    <a href="#Home">
-                        <img src="media/icons/home-account.svg" alt="Home Icon" class="icon"><span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#Profile">
-                        <img src="media/icons/card-account-details-outline.svg" alt="Profile Icon" class="icon"><span>Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#Messages">
-                        <img src="media/icons/message.svg" alt="Messages Icon" class="icon"><span>Messages</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#History">
-                        <img src="media/icons/clock-outline.svg" alt="History Icon" class="icon"><span>History</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#Task">
-                        <img src="media/icons/text-box-multiple-outline.svg" alt="Task Icon" class="icon"><span>Task</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#Communities">
-                        <img src="media/icons/account-group.svg" alt="Communities Icon" class="icon"><span>Communities</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#Settings">
-                        <img src="media/icons/cog.svg" alt="Settings Icon" class="icon"><span>Settings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#Support">
-                        <img src="media/icons/help-box.svg" alt="Support Icon" class="icon"><span>Support</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#Privacy">
-                        <img src="media/icons/shield-check.svg" alt="Privacy Icon" class="icon"><span>Privacy</span>
-                    </a>
-                </li>
-            </ul>            
+                <li><a href="#Home"><img src="media/icons/home-account.svg" alt="Home Icon"
+                            class="icon"><span>Home</span></a></li>
+                <li><a href="#Profile"><img src="media/icons/card-account-details-outline.svg" alt="Profile Icon"
+                            class="icon"><span>Profile</span></a></li>
+                <li><a href="#Messages"><img src="media/icons/message.svg" alt="Messages Icon"
+                            class="icon"><span>Messages</span></a></li>
+                <li><a href="#History"><img src="media/icons/clock-outline.svg" alt="History Icon"
+                            class="icon"><span>History</span></a></li>
+                <li><a href="#Task"><img src="media/icons/text-box-multiple-outline.svg" alt="Task Icon"
+                            class="icon"><span>Task</span></a></li>
+                <li><a href="#Communities"><img src="media/icons/account-group.svg" alt="Communities Icon"
+                            class="icon"><span>Communities</span></a></li>
+                <li><a href="#Settings"><img src="media/icons/cog.svg" alt="Settings Icon"
+                            class="icon"><span>Settings</span></a></li>
+                <li><a href="#Support"><img src="media/icons/help-box.svg" alt="Support Icon"
+                            class="icon"><span>Support</span></a></li>
+                <li><a href="#Privacy"><img src="media/icons/shield-check.svg" alt="Privacy Icon"
+                            class="icon"><span>Privacy</span></a></li>
+            </ul>
         </div>
-        <div class="header">
-            <div class="navbar">
-                <div class="search-bar">
-                    <img src="media/icons/magnify.svg" alt="Magnify Icon" class="body-icon">
-                    <input type="text">
-                </div>
-                <div class="user-profile">
-                    <img src="media/icons/bell-outline.svg" alt="Notification Icon" class="body-icon">
-                    <img src="media/user-pictures/miles morales.jpg" alt="User profile picture" class="profile-pic">
-                    <span>Pierre Gronnier</span>
-                </div>
+
+        <div class="navbar">
+            <div class="search-bar">
+                <img src="media/icons/magnify.svg" alt="Magnify Icon" class="body-icon">
+                <input type="text">
             </div>
-            
+            <div class="user-profile">
+                <img src="media/icons/bell-outline.svg" alt="Notification Icon" class="body-icon">
+                <img src="media/user-pictures/miles morales.jpg" alt="User profile picture" class="profile-pic">
+                <span>Pierre Gronnier</span>
+            </div>
+        </div>
+
+        <div class="header">
             <div class="user-info">
                 <div class="avatar-container">
                     <img src="media/user-pictures/miles morales.jpg" alt="User Avatar" class="avatar">
@@ -88,7 +65,122 @@
                 </div>
             </div>
         </div>
+
+        <div class="main">
+            <section class="section-project">
+                <h2>Your Projects</h2>
+                <div class="project">
+                    <div class="card">
+                        <div class="card-title">Super Cool Project</div>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        <div class="card-actions">
+                            <img src="media/icons/star-plus-outline.svg" alt="Star plus icon" class="card-icon">
+                            <img src="media/icons/eye-plus-outline.svg" alt="Eye plus icon" class="card-icon">
+                            <img src="media/icons/source-fork.svg" alt="Fork icon" class="card-icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Less Cool Project</div>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        <div class="card-actions">
+                            <img src="media/icons/star-plus-outline.svg" alt="Star plus icon" class="card-icon">
+                            <img src="media/icons/eye-plus-outline.svg" alt="Eye plus icon" class="card-icon">
+                            <img src="media/icons/source-fork.svg" alt="Fork icon" class="card-icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Impossible App</div>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                        <div class="card-actions">
+                            <img src="media/icons/star-plus-outline.svg" alt="Star plus icon" class="card-icon">
+                            <img src="media/icons/eye-plus-outline.svg" alt="Eye plus icon" class="card-icon">
+                            <img src="media/icons/source-fork.svg" alt="Fork icon" class="card-icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Easy Peasy App</div>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        <div class="card-actions">
+                            <img src="media/icons/star-plus-outline.svg" alt="Star plus icon" class="card-icon">
+                            <img src="media/icons/eye-plus-outline.svg" alt="Eye plus icon" class="card-icon">
+                            <img src="media/icons/source-fork.svg" alt="Fork icon" class="card-icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Ad Blocker</div>
+                        <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        <div class="card-actions">
+                            <img src="media/icons/star-plus-outline.svg" alt="Star plus icon" class="card-icon">
+                            <img src="media/icons/eye-plus-outline.svg" alt="Eye plus icon" class="card-icon">
+                            <img src="media/icons/source-fork.svg" alt="Fork icon" class="card-icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">Money Maker</div>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                        <div class="card-actions">
+                            <img src="media/icons/star-plus-outline.svg" alt="Star plus icon" class="card-icon">
+                            <img src="media/icons/eye-plus-outline.svg" alt="Eye plus icon" class="card-icon">
+                            <img src="media/icons/source-fork.svg" alt="Fork icon" class="card-icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-announcements">
+                <h2>Announcements</h2>
+                <div class="announcements">
+                <div class="announcement-card">
+                    <h3>Site Maintenance</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id sapien at tellus congue luctus.</p>
+                </div>
+                <div class="announcement-card">
+                    <h3>Community Share Day</h3>
+                    <p>Curabitur nec hendrerit leo, nec suscipit dolor. Vivamus bibendum non ligula vel molestie.</p>
+                </div>
+                <div class="announcement-card">
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Aenean tellus odio, porttitor sit amet urna vitae, malesuada scelerisque ex. Nam ac aliquam nibh.</p>
+                </div>
+                </div>                  
+            </section>
+
+            <section class="section-trending">
+                <h2>Trending</h2>
+                <div class="trending">
+                  <div class="trending-item">
+                    <img src="media/user-pictures/gwen stacy.jpg" alt="Gwen Stacy profile picture"/>
+                    <div class="trending-info">
+                      <h3>@Gwen</h3>
+                      <p>Earth-65</p>
+                    </div>
+                  </div>
+                  <div class="trending-item">
+                    <img src="media/user-pictures/peni parker.jpg" alt="Peni Parker profile picture"/>
+                    <div class="trending-info">
+                      <h3>@Peni</h3>
+                      <p>Earth-14512</p>
+                    </div>
+                  </div>
+                  <div class="trending-item">
+                    <img src="media/user-pictures/spider-man noir.jpg" alt="Spider-Man Noir profile picture"/>
+                    <div class="trending-info">
+                      <h3>@SPNoir</h3>
+                      <p>Earth-90214</p>
+                    </div>
+                  </div>
+                  <div class="trending-item">
+                    <img src="media/user-pictures/Pavitr Prabhakar.jpg" alt="Pavitr Prabhakar profile picture"/>
+                    <div class="trending-info">
+                      <h3>@Pav</h3>
+                      <p>Earth-50101</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+        </div>
     </div>
-    
 </body>
+
 </html>

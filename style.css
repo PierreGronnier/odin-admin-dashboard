@@ -13,13 +13,18 @@ body {
     background-color: #f8f9fa;
 }
 
+h2, h3{
+    margin-bottom: 2%;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas: 
         "sidebar navbar"
-        "sidebar header";
+        "sidebar header"
+        "sidebar main";
     height: 100vh;
 }
 
@@ -131,7 +136,7 @@ body {
     cursor: pointer;
 }
 
-.user-profile .profile-pic {
+.profile-pic {
     width: 65px;
     height: 65px;
     border-radius: 50%;
@@ -205,8 +210,157 @@ body {
     background-color: #0b6da1;
 }
 
-.test {
+.main {
+    grid-area: main;
     display: grid;
-    height: 100%;
-    background-color: gray;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: auto auto; 
+    grid-template-areas: 
+        "project announcements"
+        "project trending";
+    padding: 20px;
+    background-color: #E2E8F0;
+}
+
+.section-project{
+    grid-area: project;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 450px));
+    gap: 35px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-left: 6px solid #ffc107; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.card-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    filter: brightness(0.5);
+}
+
+.card-icon:hover {
+    filter: brightness(1);
+    transform: scale(1.2);
+}
+
+.section-announcements, .section-trending {
+    max-width: 400px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.section-announcements {
+    grid-area: announcements;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-card {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+.announcement-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.announcement-card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.announcement-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.section-trending {
+    grid-area: trending;
+    margin-top: 20px; 
+}
+
+.trending {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.trending-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.trending-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.trending-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-info h3 {
+    font-size: 1rem;
+    color: #0073e6;
+}
+
+.trending-info p {
+    font-size: 0.9rem;
+    margin: 5px;
+    color: #555;
 }
