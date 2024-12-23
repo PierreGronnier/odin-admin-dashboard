@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #242426; /*#007fd7*/
-    --secondary-color: #8C1F28; /*#de0606 */
-    --text-color: #e2e2e2; /*#e2e2e2 */
+    --primary-color: #242426; 
+    --secondary-color: #8C1F28; 
+    --text-color: #e2e2e2; 
 }
 
 html, body {
