@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #242426; /*#007fd7*/
+    --secondary-color: #8C1F28; /*#de0606 */
+    --text-color: #e2e2e2; /*#e2e2e2 */
+}
+
 html, body {
     height: 100%;
 }
@@ -19,7 +25,7 @@ h1{
 
 h2, h3{
     margin-bottom: 2%;
-    color: #007fd7;
+    color: var(--primary-color);
 }
 
 .container {
@@ -35,8 +41,8 @@ h2, h3{
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #de0606; 
-    color: #e2e2e2;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     padding: 20px;
 }
 
@@ -67,7 +73,7 @@ h2, h3{
 
 .menu a {
     text-decoration: none; 
-    color: #e2e2e2; 
+    color: var(--text-color);
     display: flex; 
     align-items: center;
     gap: 20px;
@@ -103,7 +109,7 @@ h2, h3{
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px; 
-    background-color: #007fd7;
+    background-color: var(--primary-color);
 }
 
 .search-bar {
@@ -134,7 +140,7 @@ h2, h3{
     align-items: center;
     gap: 20px; 
     margin-right: 7%;
-    color: #e2e2e2;
+    color: var(--text-color);
 }
 
 .user-profile .body-icon {
@@ -165,7 +171,7 @@ h2, h3{
     justify-content: space-between;
     padding: 10px; 
     border-bottom: 1px solid rgba(0, 0, 0, 1); 
-    background-color: #007fd7;
+    background-color: var(--primary-color);
 }
 
 .avatar {
@@ -179,13 +185,13 @@ h2, h3{
 .user-text {
     flex: 1;
     margin-left: 10px; 
-    color: #e2e2e2;
+    color: var(--text-color);
 }
 
 .user-text p {
     font-size: 1em;
     font-weight: bold;
-    color: #de0606;
+    color:var(--secondary-color);
 }
 
 .user-text h1 {
@@ -196,7 +202,7 @@ h2, h3{
 
 .username-handle {
     font-weight: bold;
-    color: #de0606;
+    color:var(--secondary-color); 
 }
 
 .user-actions {
@@ -207,8 +213,8 @@ h2, h3{
     padding: 8px 20px;
     font-size: 1em; 
     font-weight: bold;
-    color: #e2e2e2;
-    background-color: #de0606;
+    color: var(--text-color);
+    background-color:var(--secondary-color); 
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -228,7 +234,7 @@ h2, h3{
         "project announcements"
         "project trending";
     padding: 20px;
-    background-color: #e2e2e2;
+    background-color: var(--text-color);
 }
 
 .section-project{
@@ -237,7 +243,7 @@ h2, h3{
 }
 
 .section-project h2 {
-    color : #de0606;
+    color : var(--secondary-color); 
 }
 
 .project {
@@ -261,7 +267,7 @@ h2, h3{
 .card-title {
     font-size: 1.15rem;
     font-weight: bold;
-    color: #007fd7;
+    color: var(--primary-color);
     margin-bottom: 8px;
 }
 
@@ -302,7 +308,7 @@ h2, h3{
 }
 
 .section-announcements h2 {
-    color: #de0606;
+    color: var(--secondary-color); 
 }
 
 .announcements {
@@ -341,7 +347,7 @@ h2, h3{
 }
 
 .section-trending h2 {
-    color : #de0606;
+    color : var(--secondary-color); 
 }
 
 .trending {
